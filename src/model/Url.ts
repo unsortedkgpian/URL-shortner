@@ -20,7 +20,6 @@ const UrlSchema: Schema<Urlo> = new Schema(
 		shortId: {
 			type: String,
 			required: [true, "Short ID must be provided"],
-			unique: true,
 		},
 		redirectURL: {
 			type: String,
