@@ -13,9 +13,10 @@ export default function Home() {
       const response = await axios.post('/api/Urlshorting', { urlo }, {timeout: 100000});
       setShortId(response.data.shortId);
       console.log("we got the response");
-      console.log(response.data.shortId);
+      // console.log(response.data.shortId);
     } catch (error) {
       console.log("error in getting shortid", error);
+      throw new Error("coudent get responce",)
     }
   }, [urlo]);
 	// ts-ignore
