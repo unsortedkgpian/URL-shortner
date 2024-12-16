@@ -10,7 +10,7 @@ export default function Home() {
   const getsortid = useCallback(async () => {
     try {
       console.log("request is send");
-      const response = await axios.post('/api/Urlshorting', { urlo }, {timeout: 20000});
+      const response = await axios.post('/api/Urlshorting', { urlo }, {timeout: 10000});
       setShortId(response.data.shortId);
       console.log("we got the response");
       console.log(response.data.shortId);
