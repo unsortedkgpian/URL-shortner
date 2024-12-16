@@ -26,7 +26,7 @@ export default function Home() {
     await getsortid();
   };
     const copyToClipboard = () => {
-    const shortUrl = `https://url-shortner-pied-ten.vercel.app/${shortId}`;
+    const shortUrl = `https://url-shortner-six-cyan.vercel.app/${shortId}`;
     navigator.clipboard.writeText(shortUrl).then(() => {
       alert("Short URL copied to clipboard!");
     }).catch(err => {
@@ -65,7 +65,7 @@ export default function Home() {
           <div className="flex items-center">
             <input
               type="text"
-              value={`https://url-shortner-pied-ten.vercel.app/${shortId}`}
+              value={`https://url-shortner-six-cyan.vercel.app/${shortId}`}
               readOnly
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               onClick={(e) => e.currentTarget.select()} // Selects text on click
